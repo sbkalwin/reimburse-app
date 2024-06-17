@@ -1,0 +1,227 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.reimburseapp"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:2:3-64
+11-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:2:20-62
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:3:3-77
+12-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:3:20-75
+13    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+13-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:4:3-75
+13-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:4:20-73
+14    <uses-permission android:name="android.permission.VIBRATE" />
+14-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:5:3-63
+14-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:5:20-61
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:6:3-78
+15-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:6:20-76
+16
+17    <queries>
+17-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:7:3-13:13
+18        <intent>
+18-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:8:5-12:14
+19            <action android:name="android.intent.action.VIEW" />
+19-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:9:7-58
+19-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:9:15-56
+20
+21            <category android:name="android.intent.category.BROWSABLE" />
+21-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:10:7-67
+21-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:10:17-65
+22
+23            <data android:scheme="https" />
+23-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:11:7-37
+23-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:11:13-35
+24        </intent>
+25        <!-- Query open documents -->
+26        <intent>
+26-->[:expo-file-system] /Users/ferdylim/reimburse-app/node_modules/expo-file-system/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:9-17:18
+27            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+27-->[:expo-file-system] /Users/ferdylim/reimburse-app/node_modules/expo-file-system/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-79
+27-->[:expo-file-system] /Users/ferdylim/reimburse-app/node_modules/expo-file-system/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:21-76
+28        </intent>
+29    </queries>
+30
+31    <permission
+31-->[androidx.core:core:1.12.0] /Users/ferdylim/.gradle/caches/transforms-3/97dafb02ce1c76f135d92386cd4ea378/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+32        android:name="com.reimburseapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+32-->[androidx.core:core:1.12.0] /Users/ferdylim/.gradle/caches/transforms-3/97dafb02ce1c76f135d92386cd4ea378/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+33        android:protectionLevel="signature" />
+33-->[androidx.core:core:1.12.0] /Users/ferdylim/.gradle/caches/transforms-3/97dafb02ce1c76f135d92386cd4ea378/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+34
+35    <uses-permission android:name="com.reimburseapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+35-->[androidx.core:core:1.12.0] /Users/ferdylim/.gradle/caches/transforms-3/97dafb02ce1c76f135d92386cd4ea378/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+35-->[androidx.core:core:1.12.0] /Users/ferdylim/.gradle/caches/transforms-3/97dafb02ce1c76f135d92386cd4ea378/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+36
+37    <application
+37-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:14:3-32:17
+38        android:name="com.reimburseapp.MainApplication"
+38-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:14:16-47
+39        android:allowBackup="true"
+39-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:14:162-188
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.12.0] /Users/ferdylim/.gradle/caches/transforms-3/97dafb02ce1c76f135d92386cd4ea378/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+41        android:extractNativeLibs="false"
+42        android:icon="@mipmap/ic_launcher"
+42-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:14:81-115
+43        android:label="@string/app_name"
+43-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:14:48-80
+44        android:roundIcon="@mipmap/ic_launcher_round"
+44-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:14:116-161
+45        android:theme="@style/AppTheme" >
+45-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:14:189-220
+46        <meta-data
+46-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:15:5-83
+47            android:name="expo.modules.updates.ENABLED"
+47-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:15:16-59
+48            android:value="false" />
+48-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:15:60-81
+49        <meta-data
+49-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:16:5-93
+50            android:name="expo.modules.updates.EXPO_SDK_VERSION"
+50-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:16:16-68
+51            android:value="50.0.0" />
+51-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:16:69-91
+52        <meta-data
+52-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:17:5-105
+53            android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH"
+53-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:17:16-80
+54            android:value="ALWAYS" />
+54-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:17:81-103
+55        <meta-data
+55-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:18:5-99
+56            android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS"
+56-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:18:16-79
+57            android:value="0" />
+57-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:18:80-97
+58
+59        <activity
+59-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:19:5-30:16
+60            android:name="com.reimburseapp.MainActivity"
+60-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:19:15-43
+61            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|uiMode"
+61-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:19:44-134
+62            android:exported="true"
+62-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:19:256-279
+63            android:launchMode="singleTask"
+63-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:19:135-166
+64            android:screenOrientation="portrait"
+64-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:19:280-316
+65            android:theme="@style/Theme.App.SplashScreen"
+65-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:19:210-255
+66            android:windowSoftInputMode="adjustResize" >
+66-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:19:167-209
+67            <intent-filter>
+67-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:20:7-23:23
+68                <action android:name="android.intent.action.MAIN" />
+68-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:21:9-60
+68-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:21:17-58
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:22:9-68
+70-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:22:19-66
+71            </intent-filter>
+72            <intent-filter>
+72-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:24:7-29:23
+73                <action android:name="android.intent.action.VIEW" />
+73-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:9:7-58
+73-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:9:15-56
+74
+75                <category android:name="android.intent.category.DEFAULT" />
+75-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:26:9-67
+75-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:26:19-65
+76                <category android:name="android.intent.category.BROWSABLE" />
+76-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:10:7-67
+76-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:10:17-65
+77
+78                <data android:scheme="com.reimburseapp" />
+78-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:11:7-37
+78-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:11:13-35
+79            </intent-filter>
+80        </activity>
+81        <activity
+81-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:31:5-106
+82            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+82-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:31:15-79
+83            android:exported="false" />
+83-->/Users/ferdylim/reimburse-app/android/app/src/main/AndroidManifest.xml:31:80-104
+84
+85        <provider
+85-->[:react-native-webview] /Users/ferdylim/reimburse-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-16:20
+86            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+86-->[:react-native-webview] /Users/ferdylim/reimburse-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-83
+87            android:authorities="com.reimburseapp.fileprovider"
+87-->[:react-native-webview] /Users/ferdylim/reimburse-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-64
+88            android:exported="false"
+88-->[:react-native-webview] /Users/ferdylim/reimburse-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-37
+89            android:grantUriPermissions="true" >
+89-->[:react-native-webview] /Users/ferdylim/reimburse-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-47
+90            <meta-data
+90-->[:react-native-webview] /Users/ferdylim/reimburse-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-15:63
+91                android:name="android.support.FILE_PROVIDER_PATHS"
+91-->[:react-native-webview] /Users/ferdylim/reimburse-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:17-67
+92                android:resource="@xml/file_provider_paths" />
+92-->[:react-native-webview] /Users/ferdylim/reimburse-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:17-60
+93        </provider>
+94        <provider
+94-->[:expo-file-system] /Users/ferdylim/reimburse-app/node_modules/expo-file-system/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:21:9-30:20
+95            android:name="expo.modules.filesystem.FileSystemFileProvider"
+95-->[:expo-file-system] /Users/ferdylim/reimburse-app/node_modules/expo-file-system/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-74
+96            android:authorities="com.reimburseapp.FileSystemFileProvider"
+96-->[:expo-file-system] /Users/ferdylim/reimburse-app/node_modules/expo-file-system/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-74
+97            android:exported="false"
+97-->[:expo-file-system] /Users/ferdylim/reimburse-app/node_modules/expo-file-system/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-37
+98            android:grantUriPermissions="true" >
+98-->[:expo-file-system] /Users/ferdylim/reimburse-app/node_modules/expo-file-system/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:13-47
+99            <meta-data
+99-->[:react-native-webview] /Users/ferdylim/reimburse-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-15:63
+100                android:name="android.support.FILE_PROVIDER_PATHS"
+100-->[:react-native-webview] /Users/ferdylim/reimburse-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:17-67
+101                android:resource="@xml/file_system_provider_paths" />
+101-->[:react-native-webview] /Users/ferdylim/reimburse-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:17-60
+102        </provider>
+103
+104        <meta-data
+104-->[:expo-modules-core] /Users/ferdylim/reimburse-app/node_modules/expo-modules-core/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:9-11:89
+105            android:name="org.unimodules.core.AppLoader#react-native-headless"
+105-->[:expo-modules-core] /Users/ferdylim/reimburse-app/node_modules/expo-modules-core/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-79
+106            android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader" />
+106-->[:expo-modules-core] /Users/ferdylim/reimburse-app/node_modules/expo-modules-core/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-86
+107        <meta-data
+107-->[:expo-modules-core] /Users/ferdylim/reimburse-app/node_modules/expo-modules-core/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-15:45
+108            android:name="com.facebook.soloader.enabled"
+108-->[:expo-modules-core] /Users/ferdylim/reimburse-app/node_modules/expo-modules-core/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-57
+109            android:value="true" />
+109-->[:expo-modules-core] /Users/ferdylim/reimburse-app/node_modules/expo-modules-core/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-33
+110
+111        <provider
+111-->[androidx.emoji2:emoji2:1.2.0] /Users/ferdylim/.gradle/caches/transforms-3/4dbb3f58a9fd53a0c4eaa8ffb9d2a519/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+112            android:name="androidx.startup.InitializationProvider"
+112-->[androidx.emoji2:emoji2:1.2.0] /Users/ferdylim/.gradle/caches/transforms-3/4dbb3f58a9fd53a0c4eaa8ffb9d2a519/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+113            android:authorities="com.reimburseapp.androidx-startup"
+113-->[androidx.emoji2:emoji2:1.2.0] /Users/ferdylim/.gradle/caches/transforms-3/4dbb3f58a9fd53a0c4eaa8ffb9d2a519/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+114            android:exported="false" >
+114-->[androidx.emoji2:emoji2:1.2.0] /Users/ferdylim/.gradle/caches/transforms-3/4dbb3f58a9fd53a0c4eaa8ffb9d2a519/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+115            <meta-data
+115-->[androidx.emoji2:emoji2:1.2.0] /Users/ferdylim/.gradle/caches/transforms-3/4dbb3f58a9fd53a0c4eaa8ffb9d2a519/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+116                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+116-->[androidx.emoji2:emoji2:1.2.0] /Users/ferdylim/.gradle/caches/transforms-3/4dbb3f58a9fd53a0c4eaa8ffb9d2a519/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+117                android:value="androidx.startup" />
+117-->[androidx.emoji2:emoji2:1.2.0] /Users/ferdylim/.gradle/caches/transforms-3/4dbb3f58a9fd53a0c4eaa8ffb9d2a519/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+118            <meta-data
+118-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/ferdylim/.gradle/caches/transforms-3/8161456b63a4fc8ccb1191ca896117e0/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+119                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+119-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/ferdylim/.gradle/caches/transforms-3/8161456b63a4fc8ccb1191ca896117e0/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+120                android:value="androidx.startup" />
+120-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/ferdylim/.gradle/caches/transforms-3/8161456b63a4fc8ccb1191ca896117e0/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+121        </provider>
+122    </application>
+123
+124</manifest>

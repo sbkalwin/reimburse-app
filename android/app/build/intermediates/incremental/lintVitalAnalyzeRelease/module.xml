@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/Users/ferdylim/reimburse-app/android/app"
+    name=":app"
+    type="APP"
+    maven="reimburse-app:app:"
+    agpVersion="8.1.1"
+    buildFolder="build"
+    bootClassPath="/Users/ferdylim/Library/Android/sdk/platforms/android-34/android.jar:/Users/ferdylim/Library/Android/sdk/build-tools/34.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>
