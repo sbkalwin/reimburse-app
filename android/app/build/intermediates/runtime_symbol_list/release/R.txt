@@ -2067,4 +2067,5 @@ int styleable ViewStubCompat_android_layout 1
 int styleable ViewStubCompat_android_inflatedId 2
 int xml file_provider_paths 0x7f100000
 int xml file_system_provider_paths 0x7f100001
-int xml rn_dev_preferences 0x7f100002
+int xml provider_paths 0x7f100002
+int xml rn_dev_preferences 0x7f100003

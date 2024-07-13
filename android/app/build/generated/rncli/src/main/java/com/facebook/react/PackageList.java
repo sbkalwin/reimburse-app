@@ -13,6 +13,12 @@ import java.util.ArrayList;
 
 // expo
 import expo.modules.ExpoModulesPackage;
+// react-native-blob-util
+import com.ReactNativeBlobUtil.ReactNativeBlobUtilPackage;
+// react-native-fs
+import com.rnfs.RNFSPackage;
+// react-native-permissions
+import com.zoontek.rnpermissions.RNPermissionsPackage;
 // react-native-safe-area-context
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 // react-native-webview
@@ -63,6 +69,9 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
       new ExpoModulesPackage(),
+      new ReactNativeBlobUtilPackage(),
+      new RNFSPackage(),
+      new RNPermissionsPackage(),
       new SafeAreaContextPackage(),
       new RNCWebViewPackage()
     ));

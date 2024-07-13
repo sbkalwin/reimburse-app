@@ -1551,4 +1551,5 @@ styleable ViewBackgroundHelper android_background backgroundTint backgroundTintM
 styleable ViewStubCompat android_id android_layout android_inflatedId
 xml file_provider_paths
 xml file_system_provider_paths
+xml provider_paths
 xml rn_dev_preferences

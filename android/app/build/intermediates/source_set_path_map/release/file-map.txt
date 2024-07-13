@@ -36,5 +36,8 @@ com.reimburseapp-packaged_res-34 /Users/ferdylim/reimburse-app/node_modules/expo
 com.reimburseapp-packaged_res-35 /Users/ferdylim/reimburse-app/node_modules/expo-keep-awake/android/build/intermediates/packaged_res/release
 com.reimburseapp-packaged_res-36 /Users/ferdylim/reimburse-app/node_modules/expo-modules-core/android/build/intermediates/packaged_res/release
 com.reimburseapp-packaged_res-37 /Users/ferdylim/reimburse-app/node_modules/expo/android/build/intermediates/packaged_res/release
-com.reimburseapp-packaged_res-38 /Users/ferdylim/reimburse-app/node_modules/react-native-safe-area-context/android/build/intermediates/packaged_res/release
-com.reimburseapp-packaged_res-39 /Users/ferdylim/reimburse-app/node_modules/react-native-webview/android/build/intermediates/packaged_res/release
+com.reimburseapp-packaged_res-38 /Users/ferdylim/reimburse-app/node_modules/react-native-blob-util/android/build/intermediates/packaged_res/release
+com.reimburseapp-packaged_res-39 /Users/ferdylim/reimburse-app/node_modules/react-native-fs/android/build/intermediates/packaged_res/release
+com.reimburseapp-packaged_res-40 /Users/ferdylim/reimburse-app/node_modules/react-native-permissions/android/build/intermediates/packaged_res/release
+com.reimburseapp-packaged_res-41 /Users/ferdylim/reimburse-app/node_modules/react-native-safe-area-context/android/build/intermediates/packaged_res/release
+com.reimburseapp-packaged_res-42 /Users/ferdylim/reimburse-app/node_modules/react-native-webview/android/build/intermediates/packaged_res/release

@@ -1,4 +1,4 @@
-#Mon Jun 17 13:10:32 ICT 2024
+#Sat Jul 13 14:52:05 WIB 2024
 base.0=/Users/ferdylim/reimburse-app/android/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
 base.1=/Users/ferdylim/reimburse-app/android/app/build/intermediates/global_synthetics_dex/release/classes.dex
 base.2=/Users/ferdylim/reimburse-app/android/app/build/intermediates/dex/release/mergeDexRelease/classes2.dex

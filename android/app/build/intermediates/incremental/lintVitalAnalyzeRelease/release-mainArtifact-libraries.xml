@@ -276,6 +276,45 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="/Users/ferdylim/reimburse-app/android@@:react-native-blob-util::release"
+      jars="/Users/ferdylim/reimburse-app/node_modules/react-native-blob-util/android/build/.transforms/d136aa398469c0044e7665b7a02e5459/transformed/out/jars/classes.jar:/Users/ferdylim/reimburse-app/node_modules/react-native-blob-util/android/build/.transforms/d136aa398469c0044e7665b7a02e5459/transformed/out/jars/libs/R.jar"
+      resolved="reimburse-app:react-native-blob-util:unspecified"
+      folder="/Users/ferdylim/reimburse-app/node_modules/react-native-blob-util/android/build/.transforms/d136aa398469c0044e7665b7a02e5459/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/Users/ferdylim/reimburse-app/android@@:react-native-fs::release"
+      jars="/Users/ferdylim/reimburse-app/node_modules/react-native-fs/android/build/.transforms/8428367f8a9eb41f379f8f24fcd954da/transformed/out/jars/classes.jar:/Users/ferdylim/reimburse-app/node_modules/react-native-fs/android/build/.transforms/8428367f8a9eb41f379f8f24fcd954da/transformed/out/jars/libs/R.jar"
+      resolved="reimburse-app:react-native-fs:unspecified"
+      folder="/Users/ferdylim/reimburse-app/node_modules/react-native-fs/android/build/.transforms/8428367f8a9eb41f379f8f24fcd954da/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/Users/ferdylim/reimburse-app/android@@:react-native-permissions::release"
+      jars="/Users/ferdylim/reimburse-app/node_modules/react-native-permissions/android/build/.transforms/e74f85c9355b1f0762345eb40cc921a4/transformed/out/jars/classes.jar:/Users/ferdylim/reimburse-app/node_modules/react-native-permissions/android/build/.transforms/e74f85c9355b1f0762345eb40cc921a4/transformed/out/jars/libs/R.jar"
+      resolved="reimburse-app:react-native-permissions:unspecified"
+      folder="/Users/ferdylim/reimburse-app/node_modules/react-native-permissions/android/build/.transforms/e74f85c9355b1f0762345eb40cc921a4/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="/Users/ferdylim/reimburse-app/android@@:react-native-safe-area-context::release"
       jars="/Users/ferdylim/reimburse-app/node_modules/react-native-safe-area-context/android/build/.transforms/e4b3f95d58b43e9f0145542454772c20/transformed/out/jars/classes.jar:/Users/ferdylim/reimburse-app/node_modules/react-native-safe-area-context/android/build/.transforms/e4b3f95d58b43e9f0145542454772c20/transformed/out/jars/libs/R.jar"
       resolved="reimburse-app:react-native-safe-area-context:unspecified"
@@ -937,12 +976,12 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/ferdylim/reimburse-app/android@@:expo-modules-core$android-annotation"
-      jars="/Users/ferdylim/reimburse-app/node_modules/expo-modules-core/android-annotation/build/libs/expo-modules-core$android-annotation-1.1.1.jar"
-      resolved="::"/>
-  <library
       name="/Users/ferdylim/reimburse-app/android@@:expo-modules-core$android-annotation-processor"
       jars="/Users/ferdylim/reimburse-app/node_modules/expo-modules-core/android-annotation-processor/build/libs/expo-modules-core$android-annotation-processor-1.1.1.jar"
+      resolved="::"/>
+  <library
+      name="/Users/ferdylim/reimburse-app/android@@:expo-modules-core$android-annotation"
+      jars="/Users/ferdylim/reimburse-app/node_modules/expo-modules-core/android-annotation/build/libs/expo-modules-core$android-annotation-1.1.1.jar"
       resolved="::"/>
   <library
       name="com.facebook.fresco:animated-base:3.1.3@aar"
@@ -1115,6 +1154,10 @@
       name="com.parse.bolts:bolts-tasks:1.4.0@jar"
       jars="/Users/ferdylim/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
       resolved="com.parse.bolts:bolts-tasks:1.4.0"/>
+  <library
+      name="org.apache.commons:commons-lang3:3.0@jar"
+      jars="/Users/ferdylim/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.0/8873bd0bb5cb9ee37f1b04578eb7e26fcdd44cb0/commons-lang3-3.0.jar"
+      resolved="org.apache.commons:commons-lang3:3.0"/>
   <library
       name="com.google.guava:listenablefuture:1.0@jar"
       jars="/Users/ferdylim/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/1.0/c949a840a6acbc5268d088e47b04177bf90b3cad/listenablefuture-1.0.jar"

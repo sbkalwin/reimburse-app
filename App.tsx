@@ -2,11 +2,14 @@ import React from "react";
 import {
   BackHandler,
   KeyboardAvoidingView,
+  PermissionsAndroid,
   Platform,
   StyleSheet,
 } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import WebView from "react-native-webview";
+import { request, PERMISSIONS, check } from "react-native-permissions";
+import useBridgeDownloadFile from "./hooks/use-bridge-download-file";
 
 export default function App() {
   //https://github.com/resonatecoop/stream-app/commit/645547530367a60b73c09aa621b66ee22478eafa
@@ -21,6 +24,8 @@ export default function App() {
     return false;
   }, [webViewRef]);
 
+  const {onDownloadFile} = useBridgeDownloadFile()
+
   React.useEffect((): (() => void) | undefined => {
     if (Platform.OS === "android") {
       BackHandler.addEventListener("hardwareBackPress", onAndroidBackPress);
@@ -31,6 +36,29 @@ export default function App() {
         );
       };
     }
+  }, []);
+
+  React.useEffect(() => {
+    async function exec() {
+      try {
+        // const resultRequestRead = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE)
+        // const resultRequestWrite = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE)
+        // const resultRequestWrite = await PermissionsAndroid.request('android.permission.READ_MEDIA_IMAGES')
+        await PermissionsAndroid.request(
+          "android.permission.READ_MEDIA_IMAGES"
+        );
+        await PermissionsAndroid.request("android.permission.READ_MEDIA_AUDIO");
+        await PermissionsAndroid.request("android.permission.READ_MEDIA_VIDEO");
+        await PermissionsAndroid.request(
+          "android.permission.WRITE_EXTERNAL_STORAGE"
+        );
+        await PermissionsAndroid.request("android.permission.CAMERA")
+        // console.log( resultRequestWrite)
+      } catch (e) {
+        console.log(e);
+      }
+    }
+    exec();
   }, []);
 
   return (
@@ -54,6 +82,12 @@ export default function App() {
             hideKeyboardAccessoryView
             overScrollMode="never"
             pullToRefreshEnabled={false}
+            onMessage={(event) => {
+              const data = event.nativeEvent.data;
+              if (!data || data === "null") return;
+              const translate = JSON.parse(data)
+              onDownloadFile(translate.data,'xlsx',`download`)
+            }}
           />
         </KeyboardAvoidingView>
       </SafeAreaView>

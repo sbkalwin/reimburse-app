@@ -12,7 +12,15 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="33" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <queries>
         <intent>
@@ -27,6 +35,18 @@
             <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
         </intent>
     </queries>
+    <!--
+         Required to keep CPU alive while downloading files
+        (NOT to keep screen awake)
+    -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--
+         Required to poll the state of the network connection
+        and respond to changes
+    -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required to check whether Wi-Fi is enabled -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required to to download files without a notification -->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
 
     <permission
         android:name="com.reimburseapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -82,6 +102,15 @@
             android:name="com.facebook.react.devsupport.DevSettingsActivity"
             android:exported="false" />
 
+        <provider
+            android:name="com.ReactNativeBlobUtil.Utils.FileProvider"
+            android:authorities="com.reimburseapp.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
         <provider
             android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
             android:authorities="com.reimburseapp.fileprovider"
