@@ -4,6 +4,7 @@ import {
   KeyboardAvoidingView,
   PermissionsAndroid,
   Platform,
+  ScrollView,
   StyleSheet,
 } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
@@ -24,7 +25,7 @@ export default function App() {
     return false;
   }, [webViewRef]);
 
-  const {onDownloadFile} = useBridgeDownloadFile()
+  const { onDownloadFile } = useBridgeDownloadFile()
 
   React.useEffect((): (() => void) | undefined => {
     if (Platform.OS === "android") {
@@ -67,7 +68,8 @@ export default function App() {
         <KeyboardAvoidingView
           behavior={Platform.OS === "ios" ? "padding" : "height"}
           style={styles.container}
-        >
+          >
+
           <WebView
             cacheEnabled
             cacheMode="LOAD_DEFAULT"
@@ -82,13 +84,15 @@ export default function App() {
             hideKeyboardAccessoryView
             overScrollMode="never"
             pullToRefreshEnabled={false}
+            androidLayerType="hardware"
             onMessage={(event) => {
               const data = event.nativeEvent.data;
               if (!data || data === "null") return;
               const translate = JSON.parse(data)
-              onDownloadFile(translate.data,'xlsx',`download`)
+              onDownloadFile(translate.data, 'xlsx', `download`)
             }}
           />
+
         </KeyboardAvoidingView>
       </SafeAreaView>
     </SafeAreaProvider>
